@@ -7,10 +7,10 @@ using System.Web.Http;
 using Common;
 
 
-    public class ContactController : ApiController
+    public class ContactsController : ApiController
     {
         static List<Contact> contacts = new List<Contact>();
-        static ContactController()
+        static ContactsController()
         {
             contacts.Add(new Contact { Id = "001", Name = "zhang", PhoneNo = "0512-12345678", EmailAddress = "qinzhiqiang@qq.com", Address = "gd" });
             contacts.Add(new Contact { Id = "002", Name = "wang", PhoneNo = "0512-12345678", EmailAddress = "qinzhiqiang@qq.com", Address = "gd" });

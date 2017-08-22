@@ -15,7 +15,7 @@ namespace WebHost
             
             GlobalConfiguration.Configuration.Routes.MapHttpRoute("DefaultAPI",
                 "api/{controller}/{id}",
-                new { controller = "Contact", id = RouteParameter.Optional });
+                new { controller = "Contacts", id = RouteParameter.Optional });
         }
     }
 }
