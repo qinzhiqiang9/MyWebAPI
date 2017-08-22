@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using Common;
 
-namespace WebApi
-{
+
     public class ContactController : ApiController
     {
-        static List<Contact> contacts;
+        static List<Contact> contacts = new List<Contact>();
         static ContactController()
         {
             contacts.Add(new Contact { Id = "001", Name = "zhang", PhoneNo = "0512-12345678", EmailAddress = "qinzhiqiang@qq.com", Address = "gd" });
@@ -44,4 +43,3 @@ namespace WebApi
             contacts.Remove(contacts.First(c => c.Id == id));
         }
     }
-}
