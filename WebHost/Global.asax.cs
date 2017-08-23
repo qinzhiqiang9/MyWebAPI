@@ -12,7 +12,8 @@ namespace WebHost
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            
+            //WebApiConfig.Register
+
             GlobalConfiguration.Configuration.Routes.MapHttpRoute("DefaultAPI",
                 "api/{controller}/{id}",
                 new { controller = "Contacts", id = RouteParameter.Optional });
